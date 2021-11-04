@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Acme', sans-serif;
+}
+
+body{
+    background: whitesmoke;
+    user-select: none;
+    /* animation: a1 8s forwards linear; */
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+
+ul{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+p{
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    text-decoration: none;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: white;
+}
+
+
+button:hover{
+    background: black;
+    color: white;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+
+.lk{
+    bottom: 1%;
+    left: 0%;
+    position: fixed;
+    font-family: 'Acme', sans-serif;
+}
+
+
+h1, ul{
+    animation: a1 2s forwards;
+}
+
+
+
+@keyframes a1 {
+    0%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(20%);
+    }
+}
